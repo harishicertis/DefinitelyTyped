@@ -38,7 +38,7 @@ export namespace ngStorage {
         [key: string]: any;
     }
 
-    interface StorageProvider extends angular.IServiceProvider {
+    interface StorageProvider extends ng.IServiceProvider {
         get<T>(key: string): T | boolean;
         set<T>(key: string, value: T): T | boolean;
         remove(key: string): void;
